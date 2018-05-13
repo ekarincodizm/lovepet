@@ -15,8 +15,8 @@ $row = $query->fetch_array();
   <div class="box-header with-border">
       <h3 class="box-title">เพิ่มสาระหมาแมว</h3>
   </div>
-  <form class="form-group" action="index.php?menu=heal-insert" method="post" enctype="multipart/form-data">
-
+  <form class="form-group" action="index.php?menu=heal-update" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="id" value=<?php echo $_GET['id']?>"">
     <div class="box-body">
       หัวข้อ
       <input type="test" name="header" class="form-control" value="<?php echo $row['title'] ?>" required>

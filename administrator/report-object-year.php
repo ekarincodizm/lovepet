@@ -32,8 +32,17 @@
               <td><?php echo DateCookky($row['date']); ?></td>
               <td>
                 <?php 
+                $id=$row['id'];
+                  if($row['first_name'] == 'ไม่มี'){
+                    $sql2 = "SELECT * FROM tb_object WHERE id = '$id' ";
+                    $result2 = mysqli_query($conn, $sql2);
+                    $row2 = mysqli_fetch_array($result2);
 
-                  echo $row['first_name'].' '.$row['last_name'];                
+                    echo $row2['first_name'].' '.$row2['last_name'];
+                  }
+                    else{
+                     echo $row['first_name'].' '.$row['last_name'];       
+                    }         
                 ?>
                   
               </td>

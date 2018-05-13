@@ -11,6 +11,7 @@
     <li><a href="index.php?menu=heal-form-show"><i class="fa fa-dashboard"></i> <span>รักษาหมาแมว</span></a></li>
     <li><a href="index.php?menu=pay-out-form-show"><i class="fa fa-dashboard"></i> <span>เบิกเงิน</span></a></li>
     <li><a href="index.php?menu=object-out-form-show"><i class="fa fa-dashboard"></i> <span>เบิกของ</span></a></li>
+    <li><a href="index.php?menu=contact-form-show"><i class="fa fa-dashboard"></i> <span>ข้อมูลติดต่อ</span></a></li>
 
     <li class="header">รายงาน</li>
     <li><a href="index.php?menu=report-income-form"><i class="fa fa-dashboard"></i> <span>รายงานราบรับ</span></a></li>
