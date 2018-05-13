@@ -39,7 +39,8 @@
         <th>รูปภาพ</th>
         <th>รักษา</th>
         <th>รายละเอียด</th>
-        <th>Del</th>
+        <th>แก้ไข</th>
+        <th>ลบ</th>
       </tr>
       </thead>
       <tbody>
@@ -64,6 +65,9 @@
         <td><?php echo $row['title']; ?></td>
         <td><?php echo $row['detail']; ?></td>
 
+        <td>
+          <a href="index.php?menu=heal-form-edit&id=<?php echo $row['id'];?>" class="btn btn-warning"> แก้ไข </a>
+        </td>
         <td>
           <a href="index.php?menu=heal-del&id=<?php echo $row['id'];?>" class="btn btn-danger" onclick="return confirm('ยืนยันการลบ!');"> ลบ </a>
         </td>
